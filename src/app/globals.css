@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --color1: #2d1103;
+  --color2: #e6c17b;
+  --color2b: #fcd896;
+  --color3: #073a18;
+  --color4: #771200;
+
+}
+
+body {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+.theme1{
+  color: var(--color1);
+  background-color: var(--color2);
+  transition-duration: 0.5s;
+}
+.theme2{
+  color: var(--color2);
+  background-color: var(--color1);
+  transition-duration: 0.5s;
+}
+.theme3{
+  color: var(--color2);
+  background-color: var(--color3);
+  transition-duration: 0.5s;
+}
+.theme4{
+  color: var(--color2);
+  background-color: var(--color4);
+  transition-duration: 0.5s;
+}
+.mezclar{
+  mix-blend-mode:multiply;
+}
+
+.Bigger:hover{
+  transform: scale(1.2);
+  transition-duration: 0.1s;
+}
+.BoxShine:hover{
+  border: 2px solid var(--color2);
+  box-shadow: 0 0 10px var(--color2), 0 0 20px var(--color2);
+  transition-duration: 0.1s;
+}
+.BoxShine2:hover{
+  border: 2px solid var(--color1);
+  box-shadow: 0 0 5px var(--color1), 0 0 10px var(--color1);
+  transition-duration: 0.1s;
+}
+.TextShine:hover{
+  color: var(--color2);
+  text-shadow: 0 0 1px var(--color2), 0 0 2px var(--color2);
+  transition-duration: 0.2s;
+}
+.TextShine2:hover{
+  color: var(--color1);
+  text-shadow: 0 0 1px var(--color1), 0 0 2px var(--color1);
+  transition-duration: 0.2s;
+}
