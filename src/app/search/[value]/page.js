@@ -1,6 +1,7 @@
 "use server"
 
 import SearchResults from "@/app/components/searchresults"
+import fake from "@/app/images/fake.webp"
 
 
 //import { prisma } from "@/libs/prisma";
@@ -36,6 +37,8 @@ export default async function SearchPage({params}){
         {id: 20, name: "Patagonia", marca: "Patagonia", img: "", description: "Patagonia lager de 330ml", precio: 175, estilo: "Lager", contenido: "330"},
         {id: 21, name: "Quilmes", marca: "Quilmes", img: "", description: "Quilmes Brown de 330ml", precio: 125, estilo: "Brown", contenido: "330"},
         {id: 22, name: "Stella Artois", marca: "Stella Artois", img: "", description: "Stella Rubia e 330ml", precio: 175, estilo: "Rubia", contenido: "330"},
+        {id: 23, name: "Cerveza de Prueba", marca: "Quilmes", img: fake, description: "Cerveza de prueba", precio: 1, estilo: "Rubia", contenido: "330"},
+
 
     ];
     

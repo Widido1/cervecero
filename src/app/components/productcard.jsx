@@ -3,12 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import noimage from "../images/noimage.webp";
 import AddCartButton from "./addCartButton";
+import { useEffect, useState } from "react";
 
 // ProductBox is for the main page, the one where we can see all the products
 
 export default function ProductCard(props) {
     const pName = props.name;
-    const pImg = noimage; //imagen por defecto
+
+    const [pImg, setPImg] = useState(noimage);
+    useEffect(()=>{
+        if(props.img && props.img !== ""){
+            setPImg(props.img);
+        }
+    },[]) //imagen por defecto
 
     const product = {
         id: props.id,
