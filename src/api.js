@@ -11,8 +11,7 @@ export const createPreference = async (preferenceData) => {
     const result = await preference.create({
          body:{
             items: preferenceData,
-         }
-        
+         }      
         });
     console.log("Preference created successfully:", result);
     if (!result.init_point) {
